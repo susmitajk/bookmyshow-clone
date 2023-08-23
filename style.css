@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ----------------first navigation bar-------------------- */
+
+.f-nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d2a3f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.f-nav .f-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+}
+.f-nav .f-left .logo{
+    width: 165px;
+    height: 65px;
+    margin: 1px 0;
+}
+.f-nav .f-left .logo img{
+    width: 100%;
+    height: 100%;
+    margin: 1px 0;
+    cursor: pointer;
+}
+
+.f-nav .f-left .search_bar{
+    width: 500px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-left: 10px;
+    position: relative;
+    left: 15px;
+}
+
+.f-nav .f-left .search_bar i{
+    line-height: 40px;
+    font-size: 13px;
+    color: #646363;
+}
+
+.f-nav .f-left .search_bar input{
+    width: 450px;
+    font-size: 18px;
+    color: #646363;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.f-nav .f-right{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.f-nav .f-right p{
+    color: #fff;
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.f-nav .f-right i{
+    color: #fff;
+    margin-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.f-nav .f-right button{
+    color: #fff;
+    background: rgb(208, 92, 92);
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: center;
+    border: none;
+    padding: 4px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* ---------------------second navigation bar------------------------- */
+
+.s-nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background: #151322;
+    margin-top:70px;   
+    padding: 5px; 
+    height: 40px;
+}
+
+.s-nav .s-left{
+    display: flex;
+    margin-left: -190px;
+}
+.s-nav .s-right{
+    display: flex;
+    margin-right: -140px;
+}
+.s-nav  p{
+    color: #cbc0c0;
+    margin-inline-start: 16px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+.s-nav  p:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ------------------------main---------------------------- */
+
+.main{
+    width: 100%;
+    overflow: hidden;
+    background: rgb(252, 249, 244);
+}
+
+.main .banner{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+}
+ .main .banner img{
+    width: 100%;
+    cursor: pointer;
+ }
+
+ .main .movies {
+    width: 100%;
+    height: 400px;
+    padding: 40px;
+    display: flex;
+ }
+.main h2{
+    text-align: left;
+    padding: 22px;
+}
+.main h4{
+    text-align: left;
+    padding: 22px;
+}
+
+.main .movies .movie-card{
+    display: flex;
+    justify-content: center ;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+    
+}
+.main .movies .movie-card img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.main .stream-banner{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+}
+
+.main .stream-banner img{
+    width: 100%;
+    height: 100px;
+}
+
+.main .live-events {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+ }
+
+.main .live-events .event-cards{
+    display: flex;
+    width: 250px;
+    height: 200px;
+    justify-content: center ;
+    justify-content: space-around;
+    padding: 0px 10px 0px 10px;
+    object-fit: contain;
+    
+}
+
+.main .live-events .event-cards img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.main .head-title{
+    background: #25223a;
+}
+.main .head-title h2{
+    text-align: left;
+    padding: 22px;
+    color: #fff;
+    margin-bottom: -40px
+}
+.main .head-title h4{
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 40px;
+    margin-bottom: -40px
+    /* padding: 22px; */
+}
+.main .premiere {
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    background: #25223a;
+ }
+ .main .premiere .premier-cards{
+    display: flex;
+    justify-content: center ;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+    object-fit: contain; 
+}
+.main .premiere .premier-cards img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.main .online-events {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    
+ }
+ .main .online-events .online-card{
+    display: flex;
+    width: 100%;
+    height: 330px;
+    justify-content: center ;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+    object-fit: contain;
+}
+.main .online-events .online-card img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.main .trends{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    background: rgb(252, 249, 244);
+}
+.main .trends .trend-card{
+    display: flex;
+    width: 160px;
+    height: 80px;
+    justify-content: center ;
+    justify-content: space-around;
+    padding: 10px 20px 10px 20px;
+    object-fit: contain;
+    background: rgb(252, 249, 244);
+}
+.main .trends .trend-card span{
+    font-size: 18px;
+    color: red;
+    /* text-align: center; */
+    align-items: center;
+}
+.main .home{
+    width: 100%;
+    height: 30px;
+    background: #f5f3f3;
+}
+.main .home p{
+    color: #cbc0c0;
+    font-size: 12px;
+}
+
+/* ----------------------------------footer------------------------------------------ */
+footer{
+    width: 100%;
+    overflow: hidden;
+    background: #6e6d6d;
+}
+.foot-container{
+    width: 100%;
+    height: 70px;
+    background: #25242d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot-container .foot-left span{
+    color: #eae5e5;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+.foot-container .foot-left img{
+    color: #f3eded;
+    
+}
+.foot-container .foot-right button{
+    color: #cbc0c0;
+    background: rgb(240, 90, 90);
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+.help-icon{
+ width: 100%;
+ height: 150px;
+ display: flex;
+ align-items: center;
+ justify-content: row;
+ justify-content: center;
+}
+
+.help-icon .customer{
+    width: 100px;
+    height:100%;
+    background: transparent;
+    margin-left: 250px;
+    padding: 0px 20px;
+}
+
+.help-icon .resend{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    margin-left: 250px;
+    padding: 0px 20px;
+}
+.help-icon .subscribe{
+    width:100px;
+    height: 100px;
+    background: transparent;
+    margin-left: 250px;
+    padding: 0px 20px;
+    transition: 0.3s;
+    
+}
+.help-icon span{
+    font-size: 12px;
+    color: #cbc0c0;
+    cursor: pointer;
+}
+.help-icon span:hover{
+    color: #efefef;
+    font-weight: 200;
+}
+
+.footer-description{
+    width: 100%;
+    height: 250px;
+    background: #25242d;
+    align-items: center;
+}
+.footer-description .movies-now-up{
+    font-size: 12px;
+    font-weight: 300;
+    color: #cbc0c0;
+}
+.footer-description .movie-links{
+    color: #919191;
+}
+.footer-description .movie-links a{
+    font-size: 12px;
+    color: #919191;
+    text-decoration: none;
+}
+.footer-description .movie-links:hover{
+    text-decoration: underline;
+    color: #919191;
+}
+footer .center{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+}
+footer .center .logo{
+    width: 100%;
+    height: 100%;
+    margin: -20px 0;
+    cursor: pointer;
+}
+footer .center .logo img{
+    width: 100%;
+    height: 100%;
+    margin: -20px 0;
+    cursor: pointer;
+}
+footer .contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+footer .contact i{
+    margin-top: 50px;
+    margin-inline: 33px;
+     font-size: 25px;
+   
+   
+}
+footer .contact i:hover{
+    cursor: pointer;
+    color: #cbc0c0;
+}
